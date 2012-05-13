@@ -1,0 +1,327 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-size:12px;
+	font-family:Arial,Tahoma;
+}
+h1{
+	font-size:20px;
+}
+h2{
+	font-size:18px;
+}
+h3{
+	font-size:14px;
+}
+h4{
+	font-size:11px;
+}
+a{
+	color:#698b69;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.page{
+	margin:0 auto;
+	width:1024px;
+	position: relative;
+	
+}
+.clear{
+	clear:both;
+}
+.green-line{
+	background-color: mediumseaGreen;
+	height: 125px;
+	position: absolute;
+	width: 100%;
+	top:25px;
+}
+
+/**** HEADER ****/
+	.header{
+		height:150px;
+	}
+	.header .header-down{
+		background-color:mediumseaGreen;
+	}
+	.header .header-up{
+	    padding-bottom: 6px;
+		padding-top: 6px;
+	}
+	.header .hello-user{
+		float:right;
+	}
+	.header .main-menu{
+		list-style:none;
+	}
+	.header-main .gallery{
+		margin-top:-40px;
+	}
+	.header .main-menu li{
+		float:left;
+		margin-right:2px;
+		
+	}
+	.header #site-logo{
+			
+		width:180px;
+		height:120px;
+		float:left;
+	}
+	.header #site-logo img{
+	    height: 120px;
+		width: 150px;
+	}
+	.header .search{
+		float:right;
+		position:relative;
+		top:50px;
+	}
+	.search input{
+		border: 1px solid black;
+		border-radius: 15px 15px 15px 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		height: 25px;
+		padding-left: 15px;
+		width: 300px;
+	}
+/**** end HEADER ****/
+
+/**** CONTENT ****/
+	.content{
+		padding-top: 10px;
+		/*
+		margin:15px;
+		border:2px dotted black;
+		*/
+	}
+	.push{
+		height:40px;
+	}
+	/**** RIGHT SIDEBAR ****/
+		.content .sidebar-right{
+			float:right;
+			width:260px;
+			padding-left:10px;
+			border-left:1px solid gray;
+			
+		}
+		.sidebar-right .basket-block{
+			/*border: 1px solid black;*/
+			padding: 5px;
+			border: 1px solid mediumseaGreen;
+		}
+		.basket-block .basket-block-item{
+			border-top:1px dotted black;
+			margin-top:5px;
+			padding-top:5px;
+		}
+		.basket-block  .basket-block-item .item-image{
+			float:left;
+			width:50px;
+			height:50px;
+			border:1px solid black;
+			padding:2px;
+			margin-right: 5px;
+		}
+		.basket-block  .basket-block-item .item-image img{
+			width:50px;
+			height:50px;
+		}
+		.film-summary-block{
+			height: 300px;
+			width: 250px;
+		}
+		.film-summary-block img{
+			height: 300px;
+			width: 250px;
+		}		
+	/**** end RIGHT SIDEBAR ****/
+	/**** MAIN CONTENT ****/
+		.content .main-column{
+			width:750px;
+			float: left;
+		}
+			/**** FILM MAIN PAGE ****/
+			.film-content-new{
+				/*float: left;
+				padding-right: 2px;
+				width: 181px;
+				border-right:1px solid silver;*/
+			}
+			.film-content-new ul{
+				list-style:none;
+			}
+			.film-content-new h2{
+				text-align:center;
+			}
+			.film-content-popular{
+				/*margin-left: 198px;*/
+			}
+			.film-content-popular ul{
+				list-style:none;
+			}
+			.film-content-popular h2{
+				text-align:center;
+			}
+			.film-content-item{
+				float:left;
+				padding: 10px 15px;
+				width:150px;
+				height:250px;
+			}
+			.film-content-item .film-content-image:hover{
+				border-color: black;
+			}
+			.film-content-item .film-content-image{
+				border: 1px solid mediumseaGreen;
+				padding: 3px;
+			}
+			.film-content-item .film-content-image img{
+				height: 200px;
+				width: 140px;
+			}
+			.film-content-item .film-content-title{
+				padding-top: 5px;
+			}
+			.film-content-item .film-content-title a{
+				color:black;
+				font-weight:bold;
+			}
+			/**** end FILM MAIN PAGE ****/
+			/**** FILM FULL ****/
+			.full-film{
+			
+			}
+			.full-film h1{
+				font-weight:normal;
+			}
+			.full-film .to_basket input{
+				border: 1px solid black;
+				border-radius: 15px 15px 15px 15px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+				height: 25px;
+				padding-left: 15px;
+				text-align: left;
+				width: 190px;	
+				background-color:lightGreen;
+			}
+			
+			.full-film .full-film-system-information{
+				font-size: 20px;
+				margin-bottom: 5px;
+				margin-top: 5px;
+			}
+			.full-film .full-film-image{
+				width:200px;
+				height:300px;
+				padding:2px;
+				border:1px solid black;
+				float:left;
+				margin-right:10px;
+			}
+			.full-film .full-film-image img{
+				width:200px;
+				height:300px;
+			}
+			.full-film .full-image-description{
+				margin-top:10px;
+				margin-bottom:10px;
+			}
+			.full-film .full-film-other-information{
+				font-size:12px;
+				text-align:left;
+			}
+			.full-film .full-film-other-information th{
+				vertical-align:top;
+			}
+			/**** end FILM FULL ****/
+			/**** FILM TEASER ****/
+			.teaser-film{
+				border-collapse:collapse;
+				width:500px;
+			}
+			.teaser-film td{
+				padding:5px;
+			}
+			.teaser-film .teaser-film-item{
+				border-bottom: 1px solid black;
+			}
+			.teaser-film .teaser-film-image{
+				width:75px;
+				height:100px;
+			}
+			.teaser-film .teaser-film-image img{
+				width:75px;
+				height:100px;
+			}
+			.teaser-film .teaser-film-price{
+				width:100px;
+				vertical-align:top;
+				font-size: 12px;
+			}
+			.teaser-film .teaser-film-other{
+				border-right: 1px dotted black;
+				padding: 5px;
+				vertical-align: top;
+			}
+			.teaser-film-other h2 a:hover{
+				text-decoration:none;
+			}
+			.teaser-film-other .to_basket{
+				text-align:right;
+				font-size:12px;
+			}
+			.teaser-film-other .to_basket a{
+				text-align:right;
+			}
+			.teaser-film-other .to_basket input{
+				border: 1px solid black;
+				border-radius: 15px 15px 15px 15px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+				height: 25px;
+				padding-left: 15px;
+				text-align: left;
+				width: 190px;
+				background-color:lightGreen;
+			}
+			.teaser-film-other .cost{
+				color:red;
+				font-size:12px;
+			}
+			.teaser-film-other .teaser-film-system-information{
+				font-size:12px;
+				margin-top:5px;
+				margin-bottom:5px;
+			}
+			
+			/**** end FILM TEASER ****/
+	/**** end MAIN CONTENT ****/
+/**** CONTENT ****/
+/****  FOOTER ****/
+.footer{
+
+	height: 40px;
+	position: relative;
+	font-size: 13px;
+	margin: -40px auto 0;
+	position: relative;
+
+}
+.footer .footer-upline{
+	background-color:lightGreen;
+	height:10px;
+}
+.footer .footer-downline{
+	background-color:mediumseaGreen;
+	height:30px;
+}
+/**** end FOOTER ****/

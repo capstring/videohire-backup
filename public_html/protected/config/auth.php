@@ -1,0 +1,36 @@
+<?php
+return array(
+	'guest'=>array(
+		'type'=>CAuthItem::TYPE_ROLE,
+		'description'=>'Guest',
+		'buzRole'=>null,
+		'data'=>null,
+	),
+	'user'=>array(
+		'type'=>CAuthItem::TYPE_ROLE,
+		'description'=>'User',
+		'children'=>array(
+			'guest',
+		),
+		'buzRole'=>null,
+		'data'=>null,
+	),
+	'moderator'=>array(
+		'type'=>CAuthItem::TYPE_ROLE,
+		'description'=>'Moderator',
+		'children'=>array(
+			'user',
+		),
+		'buzRole'=>null,
+		'data'=>null,
+	),
+	'administrator'=>array(
+		'type'=>CAuthItem::TYPE_ROLE,
+		'description'=>'Administrator',
+		'children'=>array(
+			'moderator',
+		),
+		'buzRole'=>null,
+		'data'=>null,
+	),
+);
